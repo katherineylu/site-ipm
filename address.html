@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--Permet au navigateur de se préparer pour lire du code HTML-->
+<!--Elle est indispensable car c'est elle qui indique qu'il s'agit bien d'une page web HTML-->
+<html lang="fr">
+	<head>
+        <!--Précise les informations d'entête utilisées-->
+        <meta charset="utf-8">
+        <!--Permet d’avoir une information sur l’encodage des caractères utilisé-->
+		<title>Ma page personnelle</title>
+        <!--Représente le titre de la page web-->
+        <link href="css/styles.css" type="text/css" rel="stylesheet">
+	</head>
+	<!-- la balise body Contient le corps du document html, c'est à dire toutes les informations visibles par l'internaute-->
+	<body>
+        <h1>Adresse</h1>
+        <div class="menu">
+			<ul class="menu-list">
+				<li class="menu-item"><a href="index.html">CV</a></li>
+				<li class="menu-item"><a href="note.html">Notes</a></li>
+				<li class="menu-item"><a href="address.html">Adresse</a></li>
+			</ul>
+		</div>
+        
+        <div class="address">
+        <!-- iframe permet d'intégrer un contenu d'une autre page -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20253.203557367597!2d3.116577008225722!3d50.61503258318076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x975b789ee1f01e43!2sUniversit%C3%A9%20de%20Lille%20%E2%88%92%20Campus%20Cit%C3%A9%20scientifique!5e0!3m2!1sfr!2sfr!4v1597411728250!5m2!1sfr!2sfr" ></iframe>
+        </div>
+    </body>
+
+</html>

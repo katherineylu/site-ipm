@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--Permet au navigateur de se préparer pour lire du code HTML-->
+<!--Elle est indispensable car c'est elle qui indique qu'il s'agit bien d'une page web HTML-->
+<html lang="fr">
+    <head>
+        <!--Précise les informations d'entête utilisées-->
+        <meta charset="utf-8">
+        <!--Permet d’avoir une information sur l’encodage des caractères utilisé-->
+        <title>Ma page personnelle</title>
+        <!--Représente le titre de la page web-->
+        <link href="css/styles.css" type="text/css" rel="stylesheet">
+    </head>
+    <!-- la balise body Contient le corps du document html, c'est à dire toutes les informations visibles par l'internaute-->
+    <body>
+    
+        <h1>Notes</h1>
+        <div class="menu">
+			<ul class="menu-list">
+				<li class="menu-item"><a href="index.html">CV</a></li>
+				<li class="menu-item"><a href="note.html">Notes</a></li>
+				<li class="menu-item"><a href="address.html">Adresse</a></li>
+			</ul>
+		</div>
+        <!--crée un tableau -->
+        <table id="notes">
+            <caption> Notes</caption>
+            <!-- thead définit un ensemble de lignes qui définit l'en-tête des colonnes d'un tableau.-->
+            <thead>
+                <!-- tr définit l'élément de ligne d'un tableau-->
+                <tr>
+                    <th colspan = "2"><em>Programming module</em></th> <!-- Indique que la cellule courante s'étend sur 2 colonnes.-->
+                </tr>
+                <tr>
+                    <th>Cours</th> <!--colonne 1-->
+                    <th>Note</th> <!--colonne 2-->
+                </tr>
+            </thead>
+            
+            <tbody>  <!-- tbody permet de définir un ensemble de lignes comme le "corps" du tableau-->
+                <tr>
+                    <td>Développement web</td> <!-- td  définit l'élément de cellule de tableau-->
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Programmation Java</td> <!-- td  définit l'élément de cellule de tableau-->
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>Développement des applications mobiles</td>
+                    <td>18</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><strong>Moyenne</strong></td>
+                    <td>17</td>
+                </tr>
+            </tfoot>
+        
+        </table>
+    </body>
+</html>

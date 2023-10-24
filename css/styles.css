@@ -1,0 +1,244 @@
+body
+/*Pour modifier la couleur de fond ainsi que la police*/
+{
+    font-family:helvetica,arial,sans-serif;
+    background-color:#E7F3FA;
+    margin:2em;
+}
+/* Pour le Titre des pages*/
+h1
+{
+    text-align: center;
+    color: #065786;
+}
+.menu a {/*suppression de la mise en forme d'un lien visité */
+    text-decoration: none;
+    color:black;
+}
+.menu-item:hover { /*pour modifier la couleur au survol d'un lien */
+    background-color: #5399C1;
+}
+/*Pour modifier la couleur d'un lien dans le menu */
+.menu-item a:hover {
+color : #F8D0F8;
+}
+.menu-list {
+    padding: 0px; /* Pas d'intentation */
+    list-style: code; /* enlève les points de la liste */
+    text-align: center; /* le texte est centré */
+}
+
+.menu-item {
+    display: inline-block; /* Affichage horizontal */
+    width:30%;
+    border: 2px solid #065786;
+}
+.detail_block {
+    border:3px solid white;
+    border-radius: 15px;
+    background-color:#5399C1;
+    margin-bottom:5px;
+    text-align:center;
+}
+.cv{
+    background-color:#5399C1;
+    border-radius:15px;
+    border:3px solid white;
+    text-align:center;
+    display:block; /* sur la même ligne */
+    width:30%; /*pour que les 3 blocks soient cote à cote s'il y a la place */
+    height: 300px; /* limitation de la hauteur */
+    margin-left:5px;
+}
+#experience{
+    background-color: white;
+    border-color: #5399C1;
+}
+#experience .description ol{
+    display:inline-block;
+    text-align:left;
+    padding-left:0px;
+}
+
+#education .description ul{
+    display:inline-block;
+    text-align:left;
+    padding-left:0px;
+}
+table, th, td
+{
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+thead{
+    background-color:#5399C1;
+}
+
+#notes {
+    width: 30%
+}
+ 
+.address{
+    width: 100%;
+    text-align:center;
+}
+.address iframe{
+    width:20%;
+}
+/*Pour modifier la taille des images*/
+.icon{
+    width:90px;
+    height:90px;
+}
+.details-experience {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+#language{
+    background-color: #B6F9F6;
+    border-color:#5399C1;
+}
+.leisure_block {
+    border:3px solid white;
+    border-radius: 15px;
+    background-color:#5399C1;
+    margin-bottom: 5px;
+    text-align: center;
+}
+/* Heure et calendrier */
+#clock
+{
+  text-align: center; 
+  color: #072110;
+}
+
+/*calendrier*/
+.cal_calendrier
+{
+  border:1px solid #072110;
+  padding:1px;
+  background-color:#1b6641;
+  width:250px;
+  height:200px;
+
+}
+.cal_calendrier th
+{
+  border:1px solid #072110;
+  background-color:#ffffff;
+}
+.cal_calendrier td
+{
+  border:1px solid #072110;
+  background-color:#FFFFFF;
+  text-align:center;
+}
+.cal_aujourdhui
+{
+  color:#E15426;
+}
+.cal_jours_av_ap
+{
+  color:#d3fcc8;
+}
+
+.listeTexte {
+  line-height: 2em;
+}
+/* Heure et calendrier */
+#clock
+{
+  text-align: center; 
+  color: #072110;
+}
+
+/*calendrier*/
+.cal_calendrier
+{
+  border:1px solid #072110;
+  padding:1px;
+  background-color:#1b6641;
+  width:250px;
+  height:200px;
+
+}
+.cal_calendrier th
+{
+  border:1px solid #072110;
+  background-color:#ffffff;
+}
+.cal_calendrier td
+{
+  border:1px solid #072110;
+  background-color:#FFFFFF;
+  text-align:center;
+}
+.cal_aujourdhui
+{
+  color:#E15426;
+}
+.cal_jours_av_ap
+{
+  color:#d3fcc8;
+}
+
+.listeTexte {
+  line-height: 2em;
+}
+/*Pour placer le curseur dans la formulaire au dessus du bouton envoyer */
+.cursor{
+  background-image: url('../images/cursor.png');
+  background-repeat: no-repeat;
+  position: absolute;
+  width:25%;
+  right: 0px;  
+  bottom:0px;
+  height:200px;
+}
+/* Taille de la zone de message pour s'adapter à la fenêtre */
+#Message
+{
+  width: 70%;
+}
+/*Pour que l'input texte du nom soit sur une seule ligne */
+#Name{
+  display: block;
+  width: 70%;
+}
+/* Pour indiquer que les champs du formulaire sont requis*/
+#Message:invalid, #Name:invalid {
+  border: 1px dashed #E15426;
+}
+
+#Message:valid, #Name:valid {
+  border: 1px solid #000000;
+}
+
+/*Pour définir les dimensions du formulaire*/
+#contact{
+  position :relative;
+  min-width: 500px;
+  max-width: 900px;
+}
+
+/* Pour positionner la zone de bouton du formulaire */
+.contactButton
+{
+  position : relative;
+  width: 85%;
+  
+}
+/* pour positionner le bouton envoyer et lui donner un affichage en lien avec le site */
+#btnSend{
+  float: right;
+  padding-top: 1px;
+   padding-left: 10px;
+   max-width: 970px;
+   height: 30px;
+   color:#FFFFFF;
+   background-color:#1b6641;
+   border:1px solid #1b6641 ;
+}
+   
