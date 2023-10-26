@@ -1,134 +1,116 @@
 <!DOCTYPE html>
-<!--Permet au navigateur de se préparer pour lire du code HTML-->
-<!--Elle est indispensable car c'est elle qui indique qu'il s'agit bien d'une page web HTML-->
 <html lang="fr">
-	<head>
-        <!--Précise les informations d'entête utilisées-->
-        <meta charset="utf-8">
-        <!--Permet d’avoir une information sur l’encodage des caractères utilisé-->
-        <title>Ma page personnelle</title>
-        <!--Représente le titre de la page web-->
-        <link href="css/styles.css" type="text/css" rel="stylesheet">
-		<script src="scripts/script.js"></script>
-	</head>
-	<!-- la balise body contient le corps du document html, c'est à dire toutes les informations visibles par l'internaute-->
-	<body onload="UpdateClock();" onunload="KillClock()">
-        <h1>Curriculum Vitae</h1> 
-        <!-- le menu -->
-		<div class="menu">
-			<ul class="menu-list">
-				<li class="menu-item"><a href="index.html">CV</a></li>
-				<li class="menu-item"><a href="note.html">Notes</a></li>
-				<li class="menu-item"><a href="address.html">Adresse</a></li>
-			</ul>
-		</div>
-   		<div class="detail_block">
-			<h2> Détails personnels</h2>
-			<p>Nom : John Smith </p>
-			<p>email : john.smith@email.com </p>
-		</div>
-		<div class="details-experience">
-			<div class="cv" id="education">
-				<h2> Education </h2>
-				<img class="icon" src="images/school.jpg" alt="livres">
-				<div class="description">
-				<ul>
-					<li><a href="https://www.univ-lille.fr/">Université de Lille</a></li>
-					<li><p>Ecole secondaire</p></li>
-					<li><p>École primaire</p></li>
-				</ul>
-				</div>
-			</div>
-			<div class="cv" id="experience">
-				<h2> Expérience professionnelle</h2>
-				<img class="icon" src="images/experienceProfessionnelle.png" alt="experience">
-				<!--create an ordered list-->
-				<div class="description">
-					<ol>
-						<li>Entreprise 1</li>
-						<li>Entreprise 2</li>
-						<li>Entreprise 3</li>
-					</ol>
-				</div>
-			</div>
-		
-			<div class="cv" id="language">
-				<h2>Langues</h2>
-				<img class="icon" src="images/langues.png" alt="langues">
-				<div class="description">
-					<p>Anglais, Allemand Scolaire (notions)</p>
-				</div>
-			</div> 
-		</div>
-		<div class="leisure_block">
-			<h2> Loisirs</h2>
-			<p>Cinéma, jeux de rôle, jeux vidéo, rugby and golf</p>
-		</div>  
+  <head>
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
 
-		<section>
-			<h3 class="titreSection">Heure</h3>
-			<form name="theClock">
-			  <input
-				id="clock"
-				title="Clock"
-				placeholder="-"
-				type="text"
-				name="theTime"
-			  />
-			</form>
-		  </section>
-		  <section>
-			<h3 class="titreSection">Calendrier</h3>
-			<script>
-			  calendrier();
-			</script>
-		  </section>
-		  <article class="content">
-			<h2>Pour nous retrouver :</h2>
-			<section id="sectionContact">
-			  <h3 class="titreSection">Contactez-nous</h3>
-			  <!-- ajout d'un formulaire de contact qui ouvre un mail -->
-			  <form id="contact" method="get">
-				<div class="contactName">
-				  <label for="Name">Votre nom</label>
-				  <input
-					type="text"
-					id="Name"
-					name="Name"
-					maxlength="100"
-					required=""
-				  />
-				</div>
-				<div class="contactMessage">
-				  <label id="lblMessage" for="Message"
-					>Votre message (350 caractères max.)</label
-				  >
-				  <textarea
-					id="Message"
-					name="Message"
-					onkeypress="countWordMessage(this);"
-					onkeydown="countWordMessage(this);"
-					rows="6"
-					maxlength="350"
-					required=""
-				  ></textarea>
-				</div>
-				<script>
-				  /* pour appeler simplement la fonction de changement du nombre de mots dans le label lblMessage */
-				  loadFunction();
-				</script>
-				<div class="contactButton">
-				  <button
-					id="btnSend"
-					title="Envoyer"
-					type="button"
-					onclick=" sendEmail(document.getElementById('Name').value,document.getElementById('Message').value);"
-				  >
-					Envoyer
-				  </button>
-				</div>
-				<div id="cursor" class="cursor"></div>
-			  </form>
-			</section>
-	</body>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <!--
+      This is the page head - it contains info the browser uses
+      Like the title, which appears on the browser tab but not inside the page
+      Further down you'll see the content that displays in the page
+    -->
+    <title>Glass Classe - Accueil</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- The website JavaScript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!--
+      The body includes the content you see in the page
+      Each element is defined using tags, like this <div></div>
+      The attributes like class="wrapper" let us style elements in the CSS
+    -->
+    <div class="wrapper">
+      <div class="content" role="main">
+        <h1 class="title">Glass Classe</h1>
+        <!--
+      volonté de mettre le logo à gauche
+    -->
+        <img
+          src="https://cdn.glitch.global/f208cde8-d3e6-46c3-b662-64f0e90cb391/logo?v=1698310994977"
+          class="logo"
+             width="7%" height="7%"
+          alt="Editor illustration"
+          title="Click the image!"
+        />
+        <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="https://cdn.glitch.global/f208cde8-d3e6-46c3-b662-64f0e90cb391/lunettes fond rouge?v=1698304825845" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="https://cdn.glitch.global/f208cde8-d3e6-46c3-b662-64f0e90cb391/lunettes femme multicolore?v=1698304848884" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="https://cdn.glitch.global/f208cde8-d3e6-46c3-b662-64f0e90cb391/lunette monture bois.jpg?v=1698304813558" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+        <div class="instructions  backgroundshadow">
+          <h2>SAY GOODBYE TO FOOGY GLASSES</h2>
+          <h3> Discover our latest frames</h3>
+          <p>
+            <table>
+              <tr>
+                <td> 
+                  <img src= "https://cdn.glitch.global/f208cde8-d3e6-46c3-b662-64f0e90cb391/lunettes fond rouge?v=1698304825845"
+                       width="50%" height="50%"/> </td>
+                <td>
+                <img src="https://cdn.glitch.global/f208cde8-d3e6-46c3-b662-64f0e90cb391/lunettes rondes bleue?v=1698304819321"
+                     width="50%" height="50%"/></td>
+              </tr>
+          </table>
+            <strong>Discover our latest frames</strong>
+            use it to build your own site. Check out the code in the editor and open
+            the <span class="fileopener" data-file="TODO.md" data-line="0"
+              >TODO</span> for next steps!
+          </p>
+          <!--  🚧 TODO: ADD BUTTON HERE -->
+
+          <!-- Once you've added the button from TODO.md, click it in the page -->
+          <!-- Check out the function in script.js to see how it works -->
+        </div>
+      </div>
+    </div>
+    <!-- The footer holds our remix button — you can keep or delete it ✂ -->
+    <footer class="footer">
+      <div class="links"></div>
+      <a
+        class="btn--remix"
+        target="_top"
+        href="https://glitch.com/edit/#!/remix/glitch-hello-website"
+      >
+        Remix on Glitch
+      </a>
+    </footer>
+  </body>
 </html>
