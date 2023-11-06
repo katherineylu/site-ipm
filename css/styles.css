@@ -1,209 +1,47 @@
-/******************************************************************************
-START Glitch hello-app default styles
-
-The styles in this section do some minimal CSS resets, set default fonts and 
-colors, and handle the layout for our footer and "Remix on Glitch" button. If
-you're new to CSS they may seem a little complicated, but you can scroll down
-to this section's matching END comment to see page-specific styles.
-******************************************************************************/
-
-
-/* 
-  The style rules specify elements by type and by attributes such as class and ID
-  Each section indicates an element or elements, then lists the style properties to apply
-  See if you can cross-reference the rules in this file with the elements in index.html
-*/
-
-/* Our default values set as CSS variables */
-:root {
-  --color-bg: #FFFFFF;
-  --color-text-main: #000000;
-  --color-primary: #000000;
-  --wrapper-height: 87vh;
-  --image-max-width: 300px;
-  --image-margin: 3rem;
-  --font-family: 'HK Grotesk';
-  --font-family-header: 'HK Grotesk';
-}
-
-/* Basic page style resets */
-* {
-  box-sizing: border-box;
-}
-[hidden] {
-  display: none !important;
-}
-
-/* Import fonts */
-@font-face {
-  font-family: HK Grotesk;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
-    format("opentype");
-}
-@font-face {
-  font-family: HK Grotesk;
-  font-weight: bold;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
-    format("opentype");
-}
-
-/* Our remix on glitch button */
-.btn--remix {
-  font-family: HK Grotesk;
-  padding: 0.75rem 1rem;
-  font-size: 1.1rem;
-  line-height: 1rem;
-  font-weight: 500;
-  height: 2.75rem;
-  align-items: center;
-  cursor: pointer;
-  background: #FFFFFF;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #000;
-  white-space: nowrap;
-  margin-left: auto;
-}
-.btn--remix img {
-  margin-right: 0.5rem;
-}
-.btn--remix:hover {
-  background-color: #D0FFF1;
-}
-
-/* Navigation grid */
-.footer {
-  background: #000000;
-  display: flex;
-  justify-content: space-between;
-  margin: 1rem auto 0;
-  padding: 1rem 0 0.75rem 0;
-  width: 100%;
-  flex-wrap: wrap;
-  border-top: 4px solid #fff;
-}
-
-.footer a:not(.btn--remix):link,
-a:not(.btn--remix):visited {
-  font-family: HK Grotesk;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.1rem;
-  color: #000;
-  text-decoration: none;
-  border-style: none;
-}
-.footer a:hover {
-  background: var(--color-primary);
-}
-
-.footer .links {
-  padding: 0.5rem 1rem 1.5rem;
-  white-space: nowrap;
-}
-
-.divider {
-  padding: 0 1rem;
-}
-/******************************************************************************
-END Glitch hello-app default styles
-******************************************************************************/
-
 body {
-  font-family: HK Grotesk;
-  background-color: var(--color-bg);
+  font-family: "Livvic";
 }
 
-/* Page structure */
-.wrapper {
-  min-height: var(--wrapper-height);
-  display: grid;
-  place-items: center;
-  margin: 0 1rem;
+img {
+  width: 24px;
 }
-.content {
+
+.logo {
+  width: 40px;
+}
+
+.title {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 
-/* Very light scaling for our illustration */
-.title {
-  color: #000000;
-  font-family: HK Grotesk;
-  font-style: normal;
+h1 {
+  font-weight: normal;
+}
+
+.title-bold {
   font-weight: bold;
-  font-size: 100px;
-  line-height: 105%;
-  margin: 0;
-}
-.logo {
-  Max-width: 30%;
-  max-height: var(--image-max-width);
-  margin-top: var(--image-margin);
-  position: fixed; left : 10px; top : 10px;
 }
 
-/* Very light scaling for our illustration */
-.backgroundshadow {
-box-shadow: 3px 3px 3px 2px #ABAAAC;
-  
+.accueil {
+display: flex;
+  justify-content: space-around;
 }
 
-/* Instructions */
-.instructions {
-  margin: 1rem auto 0;
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 15px black;
+  padding: 30px;
+  margin: 30px;
 }
 
-/* Button - Add it from the README instructions */
-button,
-input {
-  font-family: inherit;
-  font-size: 100%;
-  background: #FFFFFF;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
-  transition: 500ms;
-}
-
-/* Subheading */
-h2 {
-  color: #000000;
-}
-
-/* Interactive image */
-.illustration:active {
-  transform: translateY(5px);
-}
-
-/* Button dip
-- Toggling this class on and off will move it down and up again
-- The button transition property above determines the speed of the translate (500ms)
-*/
-.dipped {
-  transform: translateY(5px);
-}
-
-/* Links that open files in the editor */
-.fileopener {
-  cursor:pointer;
-  font-weight:bold;
-  border-bottom:3px solid var(--color-primary);
-  color: var(--color-secondary);
-}
-.fileopener:hover {
-  border-bottom:3px solid var(--color-secondary);
-}
-{box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 500px;
+  max-width: 700px;
   position: relative;
   margin: auto;
 }
@@ -286,89 +124,59 @@ h2 {
   from {opacity: .4}
   to {opacity: 1}
 }
-/* Slideshow container */
-.slideshow-container {
-  max-width: 500px;
-  position: relative;
-  margin: auto;
+.texte{
+display: flex;
+justify-content: center;
+width: 649px;
+top: 0;
+left: 0;
+font-family: "Manjari", Helvetica;
+font-weight: 400;
+color: #ca9797;
+font-size: 45px;
+letter-spacing: 0;
+line-height: normal;
+white-space: nowrap;
+}
+.texte2{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+top: 0;
+left: 0;
+font-family: "Marmelad", Helvetica;
+font-weight: 400;
+color: #000000;
+font-size: 30px;
+letter-spacing: 0
+}
+.texte2 img {
+  width: 496px;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
+footer {
+  display: flex;
+  justify-content: space-around;
   width: 100%;
-  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 20px;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+footer .footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+footer .footer-column span {
+  margin-bottom: 8px;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+footer .footer-column span:hover {
+  text-decoration: underline;
+  background-color: white;
+  color: black;
 }
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
