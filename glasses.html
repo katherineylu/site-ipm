@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="scripts/script.js" defer></script>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;600;700&family=Manjari&family=Marmelad&family=News+Cycle&display=swap" rel="stylesheet">
+        <title>Glass Classe - Glasses</title>
+      </head>
+      <body>
+        <img src="https://cdn.glitch.global/f208cde8-d3e6-46c3-b662-64f0e90cb391/logo?v=1698310994977" class="logo" width="5%" height="5%" alt="Editor illustration" title="logo">
+     
+       <div class="title">
+       <h1><span class="title-bold">GLASS</span> CLASSE</h1>
+        </div>
+       
+       <div class="menu">
+         <div class="menu-item"><a href="accueil.html">Home</a></div>
+         <div class="menu-item"><a href="glasses.html">Glasses</a></div>
+         <div class="menu-item"><a href="contact.html">Contact Us</a></div>
+         <div class="menu-item"><a href="team.html">Our Team</a></div>
+       </div>
+
+       <div class="content">
+            <div>
+                <img src="images/glasses_banner.jpg" alt="glasses display" width="100%">
+            </div>
+            <div class="filter-buttons">
+                <button
+                    class="filter-button active"
+                    id="btn-all"
+                    onmousedown="showAllGlasses()"
+                >
+                    All
+                </button>
+                <button
+                    class="filter-button"
+                    id="btn-group1"
+                    onmousedown="filterGlasses('group1')"
+                >
+                    New arrivals
+                </button>
+                <button
+                    class="filter-button"
+                    id="btn-group2"
+                    onmousedown="filterGlasses('group2')"
+                >
+                    Bestsellers
+                </button>
+            </div>
+            <div class="glasses">
+                <div class="glasses-item group1">
+                    <img class="glasses-pics" src="images/wooden_frames.jpg" alt="wooden frames">
+                    <h2 class="glasses-names">Tooting</h2>
+                </div>
+                <div class="glasses-item group1">
+                    <img class="glasses-pics" src="images/aviators.jpg" alt="aviators">
+                    <h2 class="glasses-names">Canada Water</h2>
+                </div>
+                <div class="glasses-item group1">
+                    <img class="glasses-pics" src="images/malcolmx.jpg" alt="malcolm x glasses">
+                    <h2 class="glasses-names">Long Buckby</h2>
+                </div>
+                <div class="glasses-item group2">
+                    <img class="glasses-pics" src="images/metal_frames.jpg" alt="metal frames">
+                    <h2 class="glasses-names">Walthamstow</h2>
+                </div>
+                <div class="glasses-item group2">
+                    <img class="glasses-pics" src="images/tortoiseshell.jpg" alt="tortoiseshell">
+                    <h2 class="glasses-names">Romford</h2>
+                </div>
+                <div class="glasses-item group2">
+                    <img class="glasses-pics" src="images/red_glasses.jpg"alt="red glasses">
+                    <h2 class="glasses-names">Frome</h2>
+                </div>
+            </div>
+       </div>
+
+       
+        <footer>
+            <div class="footer-column">
+            <span>General conditions</span>
+            <span>Contact us</span>
+            </div>
+            <div class="footer-column">
+            <span>Our team</span>
+            </div>
+            <div class="footer-column">
+            <span>Delivery</span>
+            <span>Follow us</span>
+            </div>
+        </footer>
+       </body>
+       
+ </html>
